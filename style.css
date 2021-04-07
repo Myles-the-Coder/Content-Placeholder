@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, #d9a7c7, #fffcdc);
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow:hidden;
+  height: 100vh;
+}
+
+.card {
+  width: 400px;
+  height: auto;
+}
+
+#profile_img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.card-excerpt {
+  color: gray
+}
+
+#date {
+  color: gray
+}
+
+.animated-bg {
+  background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 10%, #f6f7f8 20%, #f6f7f8 100%);
+  background-size: 200% 100%;
+  animation: bgPos 1s linear infinite;
+}
+
+.animated-bg-text {
+  border-radius: 50px;
+  display: inline-block;
+  margin: 0;
+  height: 10px;
+  width: 100%
+}
+
+@keyframes bgPos {
+  0% {
+    background-position:50% 0 ;
+  }
+
+  100% {
+    background-position:-150% 0 ;
+  }
+}
